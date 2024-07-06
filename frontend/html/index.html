@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/home.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <title>User Management</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="nameSystem">SpaceUMS</h1>
+            <i id="menu" class="fa-solid fa-bars"></i>
+            <div class="center-buttons" id="center-buttons-index">
+                <button onclick="location.href = 'register.html'">Register a User</button>
+                <button onclick="location.href = 'delete.html'">Delete a User</button>
+                <button onclick="location.href='update.html'">Update a User</button>
+            </div>
+            <div class="right-button" id="right-button-index">
+                <button id="meetCreator" onclick="location.href='my-profile.html'">Meet the website creator!</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article id="firstArticle">
+            <h1 id="titleSystem">User Management System</h1><br>
+            <label for="userId">Enter user ID</label><br>
+            <input type="number" id="userId"><br>
+            <button id="searchUser" >Search by ID</button><br>
+            <button id="search" >Search All Users</button><br>
+        </article>
+        <article>
+            <div id="res"></div> 
+        </article>
+    </main>
+    <footer>
+        <p>All rights reserved!</p>
+        <a href="https://www.linkedin.com/in/n%C3%ADcolas-ren%C3%AA-tonete-cioccio-8a7a1323b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
+</body>
+</html>

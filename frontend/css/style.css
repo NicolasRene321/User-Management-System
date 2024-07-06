@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* BODY -----------------*/
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    background-image: url(../img/space.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/* HEADER -----------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(12, 24, 97), rgb(106, 48, 173));
+    padding-top: 10px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.671);
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+header > nav > h1 {
+    margin: 0;
+    flex: 1;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.712);
+    
+}
+
+header > nav > i#menu {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.3em;
+    background-color: black;
+    color: wheat;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+header > nav > .center-buttons {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    gap: 10px;
+}
+
+header > nav > .center-buttons > button {
+    border-radius: 20px;
+    background-color: rgb(6, 14, 65);
+}
+
+header > nav > .center-buttons > button:hover {
+    background-color: rgb(33, 45, 121);
+    transition: 300ms;
+}
+
+header > nav > .right-button {
+    flex: 1;
+    text-align: right;
+}
+
+header > nav > .right-button button {
+    margin-left: auto;
+    margin-right: 15px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(68, 8, 124);
+    text-shadow: 2px 2px 0px black;
+}
+
+header > nav > .right-button button:hover {
+    color: rgba(0, 255, 234, 0.993);
+    transition: 300ms;  
+}
+
+header > nav > .right-button > p {
+    margin-right: 15px;
+    color: wheat;
+    font-size: 1.3em;
+}
+
+
+/* MAIN -----------------*/
+
+main {
+    flex: 1;
+}
+
+main > article#firstArticle {
+    background-color: rgba(68, 8, 124, 0.733);
+    width: 440px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 20px 15px 0px 15px;
+    border: 3px solid rgba(0, 0, 0, 0.562);
+    border-radius: 10px;
+}
+
+main > article > h2 {
+    color: wheat;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main > article#articleDelete > h2 {
+    margin-top: 30px;
+}
+
+main > article.article-from-other-pages {
+    background-color: rgba(68, 8, 124, 0.733);
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 20px 15px 0px 15px;
+    border: 3px solid rgba(0, 0, 0, 0.562);
+    border-radius: 10px;   
+}
+
+main > article#articleDelete {
+    padding: 15px 5px 0px 5px;    
+}
+
+main > article#articleUpdate {
+    padding: 15px 5px 80px 5px;   
+}
+
+main > article#articleProfile {
+    padding: 15px 100px 50px 100px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+}
+
+main > article#articleProfile > hr {
+    width: 400px;
+    padding: 3px;
+    border: none;
+    border-radius: 20px;
+    background-color: wheat;
+    margin-bottom: 10px;
+}
+
+main > article#articleProfile > #profileInformation {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(196, 212, 255);
+    border-radius: 10px;
+}
+
+main > article#articleProfile > #profileInformation > img {
+    
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+main > article#articleProfile > #profileInformation > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+main > article#articleProfile > #profileInformation > div > p {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    width: 300px;
+    line-height: 30px;
+}
+
+main > article > button {
+    border-radius: 7px;
+}
+
+
+/* OTHER SETTINGS -----------------*/
+
+h1#nameSystem {
+    color: bisque;
+    font-size: 1.8em;
+}
+
+h1#titleSystem {
+    font-size: 2.2em;
+    text-shadow: 7px 0px 2px black;
+    color: bisque;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(191, 191, 201);
+    text-shadow: 2px 2px 0px black;
+    font-size: 1.2em;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* FOOTER -----------------*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: rgb(16, 25, 97);
+    padding: 10px; 
+    margin-top: 30px;
+    border-top: 3px solid rgba(0, 0, 0, 0.836);
+    background-image: linear-gradient(to bottom, rgb(12, 24, 97), rgb(106, 48, 173));
+}
+
+footer > p {
+    flex: 2;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+footer > a {
+    color: wheat;
+    font-size: 1.9em;
+}
+
+
+/* MEDIA QUERIES -----------------*/
+
+@media screen and (max-width: 1102px) {
+    header > nav > .center-buttons > button {
+        width: 148px;
+        font-size: 1em;
+    }   
+
+    header > nav > .right-button button {
+        width: 210px;
+        font-size: 1em;
+    }
+
+    header > nav > .right-button > p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    header > nav {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    header > nav > h1#nameSystem {
+        font-size: 1.6em;
+        margin-bottom: 12px;
+    }
+
+    header > nav > .center-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 550px;
+        border: 1px solid black;
+        border-bottom: none;
+    }
+
+    header > nav > .center-buttons > button {
+        width: 550px;    
+        border-radius: 0px; 
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: -10px;
+        height: 40px;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    header > nav > .center-buttons > button:last-child {
+        margin-bottom: 0px;
+    }
+
+    header > nav > #center-buttons-index {
+        display: none;
+    }
+
+    header > nav > .right-button {
+        display: flex;
+        text-align: center;  
+        width: 550px;
+    }
+
+    header > nav > #right-button-index {
+        display: none;
+    }
+
+    header > nav > .right-button > button {
+        margin: auto;
+        width: 550px;
+        border-radius: 0px;
+        border: none;
+        border: 2px solid black;
+        border-top: none;
+        border-bottom: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+
+    header > nav > .right-button > p {
+        font-size: 1em;
+        padding: 10px;
+        width: 600px;
+        font-weight: bold;
+    }
+
+    header > nav > i#menu {
+        display: block;
+        background-color: rgb(26, 24, 24);
+        color: wheat;
+        width: 550px;
+        padding: 8px 0px 8px 0px;
+        font-size: 1.7em;
+        cursor: pointer;
+    }
+
+    header > nav > i#menu:hover {
+        background-color: wheat;
+        color: black;
+    }
+
+    main > article > h1#titleSystem {
+        font-size: 1.7em;
+    }
+}
+
+
+
