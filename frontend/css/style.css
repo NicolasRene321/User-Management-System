@@ -17,7 +17,7 @@ body, html {
     background-image: url(../img/space.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -274,6 +274,7 @@ footer > a {
 }
 
 @media screen and (max-width: 945px) {
+
     header > nav {
         display: flex;
         flex-direction: column;
@@ -294,7 +295,7 @@ footer > a {
     }
 
     header > nav > .center-buttons > button {
-        width: 550px;    
+        width: 100vw;    
         border-radius: 0px; 
         padding: 0px;
         margin: 0px;
@@ -315,7 +316,7 @@ footer > a {
     header > nav > .right-button {
         display: flex;
         text-align: center;  
-        width: 550px;
+        width: 100vw;
     }
 
     header > nav > #right-button-index {
@@ -324,7 +325,7 @@ footer > a {
 
     header > nav > .right-button > button {
         margin: auto;
-        width: 550px;
+        width: 100vw;
         border-radius: 0px;
         border: none;
         border: 2px solid black;
@@ -346,7 +347,7 @@ footer > a {
         display: block;
         background-color: rgb(26, 24, 24);
         color: wheat;
-        width: 550px;
+        width: 100vw;
         padding: 8px 0px 8px 0px;
         font-size: 1.7em;
         cursor: pointer;
@@ -367,11 +368,12 @@ footer > a {
 
     main > article#articleProfile {
          width: 200px;
+         height: 490px;
          padding-bottom: 60px;
     }
 
     main > article#articleProfile > #profileInformation {
-        width: 325px;      
+        flex-direction: column;     
     }
 
     main > article#articleProfile > hr {
@@ -380,12 +382,10 @@ footer > a {
 
     main > article#articleProfile > #profileInformation > div p {
         font-size: 0.7em;
-        width: 170px;
+        width: 200px;
     }
 
-    footer > p {
-        font-size: 0.9em;
-    }
+
 }
 
 
