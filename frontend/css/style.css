@@ -387,6 +387,7 @@ footer > a {
 
     footer {
         margin-top: auto;
+        margin-bottom: 0;
     }
 }
 
