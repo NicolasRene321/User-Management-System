@@ -367,7 +367,7 @@ footer > a {
     }
 
     main > article#articleProfile {
-         width: 200px;
+         width: 140px;
          height: 490px;
          padding-bottom: 60px;
     }
@@ -385,7 +385,9 @@ footer > a {
         width: 200px;
     }
 
-
+    footer {
+        margin-top: auto;
+    }
 }
 
 
