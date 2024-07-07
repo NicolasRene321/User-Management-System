@@ -357,8 +357,34 @@ footer > a {
         color: black;
     }
 
+    main > article#firstArticle {
+        width: 250px;    
+    }
+
     main > article > h1#titleSystem {
         font-size: 1.7em;
+    }
+
+    main > article#articleProfile {
+         width: 200px;
+         padding-bottom: 60px;
+    }
+
+    main > article#articleProfile > #profileInformation {
+        width: 325px;      
+    }
+
+    main > article#articleProfile > hr {
+        width: 300px;
+    }
+
+    main > article#articleProfile > #profileInformation > div p {
+        font-size: 0.7em;
+        width: 170px;
+    }
+
+    footer > p {
+        font-size: 0.9em;
     }
 }
 
