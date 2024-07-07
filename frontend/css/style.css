@@ -238,7 +238,6 @@ footer {
     color: white;
     background-color: rgb(16, 25, 97);
     padding: 10px; 
-    margin-top: 30px;
     border-top: 3px solid rgba(0, 0, 0, 0.836);
     background-image: linear-gradient(to bottom, rgb(12, 24, 97), rgb(106, 48, 173));
 }
